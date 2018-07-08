@@ -41,6 +41,7 @@ export default class Authorize extends wepy.page {
             nickName: e.detail.userInfo.nickName
           }
         })
+/*
       if (rlt.data.result) {
           let data = rlt.data;
           if (data.data.openid) {
@@ -60,6 +61,10 @@ export default class Authorize extends wepy.page {
             })
           }
         }
+*/
+        wepy.switchTab({
+          url: '/pages/home'
+        })
 
       }
     }
